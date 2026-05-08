@@ -3,85 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aromatherapy & Maya Facial Release</title>
+    <title>Essential Therapeutics | Dr Debbie Godden</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .bg-sage { background-color: #f1f3f0; }
-        .text-sage { color: #556b2f; }
-        .btn-sage { background-color: #7d9070; }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-sage text-gray-800">
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-10 h-10 bg-sage rounded-full flex items-center justify-center">
-                    <span class="text-xs font-bold text-sage">LOGO</span>
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0">
+                    <span class="text-2xl font-serif font-bold text-indigo-900">Essential Therapeutics</span>
                 </div>
-                <span class="text-xl font-semibold tracking-wide text-sage">Essential Therapeutics</span>
-            </div>
-            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
-                <a href="#services" class="hover:text-sage transition">Services</a>
-                <a href="#about" class="hover:text-sage transition">About</a>
-                <a href="#contact" class="hover:text-sage transition">Contact</a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="hover:text-indigo-600 px-3 py-2 font-medium">About</a>
+                        <a href="#services" class="hover:text-indigo-600 px-3 py-2 font-medium">Services</a>
+                        <a href="#contact" class="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:bg-indigo-700 transition">Book Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header class="relative h-screen flex items-center justify-center text-center px-6">
-        <div class="max-w-3xl">
-            <h1 class="text-5xl md:text-7xl mb-6 text-sage">Find your balance.</h1>
-            <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">Expert Aromatherapy Massage & Mayofacial Release designed to restore your body and calm your mind.</p>
-            <a href="#contact" class="btn-sage text-white px-10 py-4 rounded-full shadow-lg hover:bg-opacity-90 transition">Book a Consultation</a>
+    <header class="relative bg-white py-24 sm:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl font-serif font-bold tracking-tight text-gray-900 sm:text-7xl">
+                        Relax, Replenish, <span class="text-indigo-600 italic">Feel Your Best.</span>
+                    </h1>
+                    <p class="mt-8 text-xl leading-8 text-gray-600">
+                        Providing NHS accredited Aromatherapy treatments and specialised Myofascial Release in Harrogate. Professional, personalised care led by Dr Debbie Godden.
+                    </p>
+                    <div class="mt-10 flex gap-x-6">
+                        <a href="#contact" class="rounded-md bg-indigo-600 px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enquire Today</a>
+                        <a href="#services" class="text-lg font-semibold leading-6 text-gray-900 flex items-center">View Services <span class="ml-2">→</span></a>
+                    </div>
+                    <p class="mt-6 text-sm text-gray-500">Dr Debbie Godden (MBChB FRCEM)</p>
+                </div>
+                <div class="relative">
+                    <div class="aspect-[4/3] rounded-2xl bg-gray-100 flex items-center justify-center border-2 border-dashed border-gray-300">
+                        <p class="text-gray-400">Main Hero Image (e.g., Debbie's Practice)</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="services" class="py-24 bg-white px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl text-center mb-16 text-sage">Our Treatments</h2>
+    <section id="about" class="py-24 bg-indigo-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-8">Personalised Care in Harrogate</h2>
+            <p class="text-xl max-w-3xl mx-auto leading-relaxed">
+                "We aim to provide excellent, personalised care to help you relax, replenish and feel your best. Whether you are seeking relief from chronic pain through Myofascial Release or looking to de-stress with Clinical Aromatherapy, each session is tailored to your unique needs."
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-serif font-bold text-gray-900">Specialised Treatments</h2>
+                <p class="mt-4 text-gray-600">Expertise in both physical and emotional well-being.</p>
+            </div>
             <div class="grid md:grid-cols-2 gap-12">
-                <div class="p-8 bg-sage rounded-2xl">
-                    <h3 class="text-2xl mb-4">Aromatherapy Massage</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">A bespoke blend of essential oils tailored to your emotional and physical needs.</p>
-                    <span class="font-bold text-sage">60 Mins — £XX</span>
+                <div class="bg-gray-50 p-10 rounded-3xl border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-hand-sparkles text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Myofascial Release (MFR)</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        A specialised physical therapy that addresses chronic pain, restricted movement, and tension by working with the body's connective tissue (fascia). Ideal for long-term relief and recovery.
+                    </p>
                 </div>
-                <div class="p-8 bg-sage rounded-2xl">
-                    <h3 class="text-2xl mb-4">Mayofacial Release</h3>
-                    <p class="text-gray-600 leading-relaxed mb-4">A gentle, rhythmic technique to release tension in the face, neck, and scalp.</p>
-                    <span class="font-bold text-sage">45 Mins — £XX</span>
+                <div class="bg-gray-50 p-10 rounded-3xl border border-gray-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-leaf text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Clinical Aromatherapy</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        NHS accredited Aromatherapy treatments using therapeutic-grade essential oils. Designed to promote deep relaxation, reduce stress, and support your body's natural healing processes.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-sage px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl mb-12 text-sage italic">"A truly transformative experience. I felt like a new person."</h2>
-            <p class="uppercase tracking-widest text-sm font-bold">— Sarah J., Client</p>
-        </div>
-    </section>
-
-    <section id="contact" class="py-24 bg-white px-6">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl text-sage mb-4">Get in Touch</h2>
-                <p>Based in Harrogate North Yorkshire | Mobile appointments available</p>
+    <section id="contact" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-2">
+                <div class="p-12 bg-indigo-600 text-white">
+                    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+                    <p class="mb-8 text-indigo-100">Contact Dr Debbie Godden to discuss your requirements or to book a private session at Harrogate Therapeutics.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-location-dot w-8 text-indigo-200"></i>
+                            <span>Harrogate, North Yorkshire</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope w-8 text-indigo-200"></i>
+                            <span>info@essentialtherapeutics.co.uk</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-12">
+                    <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" name="name" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" name="email" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea name="message" rows="4" required class="mt-1 block w-full rounded-md border-gray-300 shadow-sm p-3 border focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-md font-bold hover:bg-indigo-700 transition shadow-lg">Send Message</button>
+                    </form>
+                </div>
             </div>
-            <form action="#" method="POST" class="grid grid-cols-1 gap-6">
-                <input type="text" placeholder="Your Name" class="p-4 border-b border-gray-300 focus:border-sage outline-none">
-                <input type="email" placeholder="Your Email" class="p-4 border-b border-gray-300 focus:border-sage outline-none">
-                <textarea placeholder="How can I help you?" rows="4" class="p-4 border-b border-gray-300 focus:border-sage outline-none"></textarea>
-                <button type="submit" class="btn-sage text-white py-4 rounded-md uppercase tracking-widest font-bold">Send Message</button>
-            </form>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-gray-400 text-sm">
-        <p>&copy; 2026 Essential Therapeutics Ltd. All rights reserved.</p>
+    <footer class="bg-white py-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <p class="text-gray-500">&copy; 2026 Essential Therapeutics. Professional treatments by Dr Debbie Godden.</p>
+        </div>
     </footer>
 
 </body>
