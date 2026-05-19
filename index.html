@@ -156,12 +156,28 @@
       <p style="margin-top:16px">We work within clinic spaces across the Harrogate area.</p>
       <p style="margin-top:16px">Home visits may be available on request.</p>
     </div>
-    <form class="contact-form" netlify name="contact" method="POST">
-      <input type="hidden" name="form-name" value="contact">
-      <input type="text" name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" placeholder="Your message" required></textarea>
-      <button type="submit">Send message</button>
+    <form name="business-contact" class="contact-form" method="POST" data-netlify="true" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="business-contact">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="visitor-name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="visitor-email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="visitor-message" required></textarea>
+      </div>
+
+      <div style="display:none">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </div>
+
+      <button type="submit">Send Message</button>
     </form>
   </div>
 </div>
@@ -170,6 +186,31 @@
   <p>© 2026 Essential Therapeutics, Harrogate</p>
  <!-- <p style="margin-top:8px"><a href="http://instagram.com/essentialtherapeuticsharrogate" target="_blank" rel="noopener">Instagram</a></p> -->
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var name = form.querySelector('input[name="name"]').value.trim();
+      var email = form.querySelector('input[name="email"]').value.trim();
+      var message = form.querySelector('textarea[name="message"]').value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please complete all fields before sending your message.');
+        return;
+      }
+
+      var subject = encodeURIComponent('Website enquiry from ' + name);
+      var body = 'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message;
+      var mailto = 'mailto:essentialtherapeuticsharrogate@gmail.com?subject=' + subject + '&body=' + encodeURIComponent(body);
+
+      window.location.href = mailto;
+    });
+  });
+</script>
 
 </body>
 </html>
