@@ -64,11 +64,16 @@
     #contact p { font-family: Arial, sans-serif; font-size: 0.9rem; color: var(--muted); margin-bottom: 12px; }
     #contact .email-link { font-family: Arial, sans-serif; font-size: 0.9rem; word-break: break-all; }
     .contact-form { display: flex; flex-direction: column; gap: 12px; }
+    .form-group { display: grid; grid-template-columns: 140px 1fr; gap: 12px; align-items: center; }
+    .form-group label { font-family: Arial, sans-serif; font-size: 0.9rem; color: var(--text); font-weight: 500; }
     .contact-form input, .contact-form textarea { font-family: Arial, sans-serif; font-size: 0.9rem; padding: 10px 12px; border: 1px solid var(--border); border-radius: 4px; color: var(--text); }
     .contact-form textarea { min-height: 110px; resize: vertical; }
     .contact-form button { background: var(--primary); color: #fff; border: none; padding: 12px; border-radius: 4px; font-size: 0.95rem; cursor: pointer; }
     .contact-form button:hover { opacity: 0.88; }
-    @media (max-width: 640px) { #contact .inner { grid-template-columns: 1fr; } }
+    @media (max-width: 640px) { 
+      #contact .inner { grid-template-columns: 1fr; }
+      .form-group { grid-template-columns: 1fr; }
+    }
 
     /* FOOTER */
     footer { background: var(--primary); color: rgba(255,255,255,0.8); text-align: center; padding: 24px 5%; font-family: Arial, sans-serif; font-size: 0.85rem; }
@@ -164,7 +169,7 @@
       </div>
 
       <div class="form-group">
-        <label for="email">Email Address:</label>
+        <label for="email">Your Email:</label>
         <input type="email" id="email" name="visitor-email" required>
       </div>
 
