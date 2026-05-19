@@ -14,20 +14,21 @@
       --muted: #555;
       --border: #ddd;
     }
-    body { font-family: Georgia, 'Times New Roman', serif; color: var(--text); line-height: 1.7; }
+    body { font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; color: var(--text); line-height: 1.7; }
     a { color: var(--primary); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
     /* NAV */
-    nav { background: var(--primary); padding: 0 5%; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
-    nav .logo { color: #fff; font-size: 1.1rem; font-weight: bold; padding: 16px 0; letter-spacing: 0.02em; }
+    nav { background: #e8f0ec; padding: 0 5%; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    nav .logo { padding: 12px 0; }
+    nav .logo img { max-height: 150px; width: auto; display: block; }
     nav .links { display: flex; gap: 0; flex-wrap: wrap; }
-    nav .links a { color: rgba(255,255,255,0.88); font-family: Arial, sans-serif; font-size: 0.88rem; padding: 18px 16px; display: block; transition: background 0.15s; }
-    nav .links a:hover { background: rgba(255,255,255,0.12); text-decoration: none; }
+    nav .links a { color: #3a6b5e; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 0.88rem; padding: 18px 16px; display: block; transition: background 0.15s; }
+    nav .links a:hover { background: rgba(58,107,94,0.12); text-decoration: none; }
     .nav-toggle { display: none; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; padding: 16px 0; }
 
     /* HERO */
-    #hero { background: var(--hero-bg); padding: 80px 5%; text-align: center; }
+    #hero { background: var(--hero-bg); padding: 120px 5% 80px; text-align: center; }
     #hero h1 { font-size: clamp(1.6rem, 4vw, 2.6rem); color: var(--primary); margin-bottom: 1rem; line-height: 1.25; }
     #hero p { font-size: 1.15rem; color: var(--muted); max-width: 600px; margin: 0 auto 2rem; font-style: italic; }
     .btn { display: inline-block; background: var(--primary); color: #fff; padding: 14px 32px; border-radius: 4px; font-family: Arial, sans-serif; font-size: 0.95rem; transition: background 0.2s; }
@@ -83,7 +84,9 @@
 <body>
 
 <nav>
-  <div class="logo">Essential Therapeutics</div>
+  <div class="logo">
+    <img src="images/ET_Logo_Landscape.PNG" alt="Essential Therapeutics logo">
+  </div>
   <button class="nav-toggle" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Menu">☰</button>
   <div class="links">
         <a href="#hero">Home</a>
@@ -103,7 +106,7 @@
   <h2>Who are we?</h2>
   <div class="about-inner">
     <div>
-      <p>Essential Therapeutics is led by Dr Debbie Godden (MBChB FRCEM) who has been an NHS doctor for more than 25 years. I completed my Aromatherapy training at the only NHS-based complementary therapy school — the Natural Health School — and am approved to provide treatments to NHS referred patients. In 2022 I undertook training in Myofascial Release to enable me to offer an extended range of services.</p>
+      <p>Essential Therapeutics is led by Dr Debbie Godden (MBChB FRCEM) who was an NHS doctor for more than 25 years. I completed my Aromatherapy training at the only NHS-based complementary therapy school — the Natural Health School — and am approved to provide treatments to NHS referred patients. In 2022 I undertook training in Myofascial Release to enable me to offer an extended range of services.</p>
       <span class="badge">Listed on the FHT Complementary Healthcare Therapist Register</span>
     </div>
     <div class="quote-block">"Essential Therapeutics evolved because I believe complementary therapies have the potential to help many people."</div>
@@ -129,7 +132,6 @@
     </div>
   </div>
 </div>
-
 <section id="testimonials">
   <h2>What our clients say</h2>
   <div class="testimonials-grid">
