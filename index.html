@@ -21,7 +21,7 @@
     /* NAV */
     nav { background: #e8f0ec; padding: 0 5%; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
     nav .logo { padding: 12px 0; }
-    nav .logo img { max-height: 120px; width: auto; display: block; }
+    nav .logo img { max-height: 120px; max-width: 100%; width: auto; display: block; }
     nav .links { display: flex; gap: 0; flex-wrap: wrap; }
     nav .links a { color: #3a6b5e; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 0.88rem; padding: 18px 16px; display: block; transition: background 0.15s; }
     nav .links a:hover { background: rgba(58,107,94,0.12); text-decoration: none; }
@@ -75,6 +75,7 @@
     footer a { color: rgba(255,255,255,0.7); margin: 0 8px; }
 
     @media (max-width: 680px) {
+      nav .logo img { max-height: 90px; }
       nav .links { display: none; }
       nav .links.open { display: flex; flex-direction: column; position: absolute; top: 56px; left: 0; right: 0; background: var(--primary); z-index: 200; }
       .nav-toggle { display: block; }
